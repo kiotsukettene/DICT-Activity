@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Cloud Deployment</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2933;
+      --border: #d8dde3;
+      --accent: #2f5d9f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      max-width: 720px;
+      width: 100%;
+      padding: 28px;
+    }
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    header p {
+      margin: 0 0 18px;
+      font-size: 15px;
+      color: #4b5563;
+    }
+    .profile {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      background: #e5e7eb;
+    }
+    .name {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .tagline {
+      margin-top: 4px;
+      font-size: 14px;
+      color: #52606d;
+    }
+    .content {
+      font-size: 15px;
+      line-height: 1.6;
+      padding-top: 4px;
+      border-top: 1px solid var(--border);
+    }
+    footer {
+      margin-top: 18px;
+      font-size: 13px;
+      color: #6b7280;
+    }
+    @media (max-width: 560px) {
+      body { padding: 20px; }
+      .profile { flex-direction: column; align-items: flex-start; }
+      .avatar { width: 100%; height: auto; max-width: 320px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" aria-label="Profile">
+    <header>
+      <h1>My First Cloud Deployment</h1>
+      <p>A small, personal page to mark my first cloud deployment.</p>
+    </header>
+
+    <section class="profile">
+      <img class="avatar" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=400&q=80" alt="Your portrait">
+      <div>
+        <div class="name">Russell Loreto</div>
+        <div class="tagline">First steps running on the cloud.</div>
+      </div>
+    </section>
+
+    <section class="content">
+      <p>This is my first deployed website. I'm excited to see where this journey takes me.</p>
+    </section>
+
+    <footer>
+      Live now. More to come.
+    </footer>
+  </main>
+</body>
+</html>
+
